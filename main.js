@@ -18,13 +18,15 @@ app.innerHTML = `
     </div>
 `;
 
-// LOCAL STORAGE
+//* LOCAL STORAGE
+
 const saveState = (list) => {
   localStorage.setItem("list", JSON.stringify(list));
 };
 const loadState = () => {
   localStorage.getItem(JSON.parse("list"));
 };
+
 //?Selectores
 
 const root = document.querySelector(".todos");
